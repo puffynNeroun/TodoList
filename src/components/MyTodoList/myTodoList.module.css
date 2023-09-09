@@ -1,0 +1,64 @@
+.todo {
+}
+
+.todo__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__input {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid teal;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.todo__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid teal;
+  padding: 30px 10px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.list__item span {
+  opacity: 0.5;
+  padding-right: 20px;
+}
+
+.list__btn {
+  background: rgba(175, 35, 35, 0.7);
+  padding: 7px 15px;
+  color: rgb(233, 227, 227);
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.list__btn:hover {
+  background: red;
+  color: white;
+}
+
+
+.list__item.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
